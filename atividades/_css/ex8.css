@@ -1,0 +1,44 @@
+* {
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
+body {
+    background-color: #afc7b9;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+div {
+    width: 50%;
+    height: 775px;
+    background-color: #ffe1c9;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #998b82;
+}
+
+input {
+    width: 275px;
+    height: 30px;
+    border: 2px solid #998b82;
+}
+
+input[type="submit"] {
+    width: 195px;
+    height: 25px;
+    border: 2px solid #998b82;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    position: relative;
+    top: 1px;
+}
