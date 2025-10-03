@@ -25,7 +25,7 @@
 
     echo "Conectado com sucesso";
 
-    $sql = " INSERT INTO pessoa01(
+    $sql = "INSERT INTO pessoa01(
     pessoa_id,
     pessoa_nome,
     pessoa_cpf,

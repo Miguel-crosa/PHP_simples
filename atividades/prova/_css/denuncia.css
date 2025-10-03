@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: url(../_imagens/cursor.png), default;
+}
+
+body {
+    background-color: #e8e6e6;
+}
+
+#formulario {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50%-50%;
+    background-color: #d20000;
+    color: white;
+    width: 750px;
+    height: 795px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 12px;
+}
+
+label {
+    font-size: 18px;
+    display: flex;
+    justify-self: center;
+    margin-top: 12px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: black;
+    cursor: url(../_imagens/cursor-escrever.png), text;
+}
+
+input {
+    width: 350px;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 1vh;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    outline: 0;
+    cursor: url(../_imagens/cursor-pointer.png), pointer;
+    transition: 0.2s;
+}
+
+input:focus {
+    scale: 1.2;
+    cursor: url(../_imagens/cursor-escrever.png), text;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type='submit'] {
+    width: 120px;
+    position: relative;
+    left: 80px;
+}
+
+input[type='submit']:hover {
+    scale: 1.14;
+}
+
+input[type='submit']:focus {
+    position: relative;
+    top: 1px;
+    cursor: wait;
+    text-align: center;
+    font-weight: normal;
+}
+
+#tabela {
+    position: absolute;
+    border: 4px solid #000000;
+    border-radius: 8px;
+    width: 120px;
+    height: 25px;
+    left: 43%;
+    top: 78.5%;
+    cursor: url(../_imagens/cursor-pointer.png), auto;
+    transition: 0.2s;
+}
+
+#tabela:hover {
+    scale: 1.14;
+}
+
+#tabela:focus {
+    cursor: wait;
+    text-align: center;
+    font-weight: normal;
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    border: 2px solid black;
+    transition: 0.2s;
+    position: absolute;
+    left: 90%;
+    top: 95%;
+}
+
+select {
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: 0;
+}
+
+button:hover {
+    cursor: url(../_imagens/cursor-pointer.png), pointer;
+    scale: 1.15;
+}
+
+#executado {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    translate: -50%-50%;
+    animation: text-animation 12s infinite linear;
+}
+
+@keyframes text-animation {
+
+    0% {
+        left: 7%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 95%;
+        opacity: 0.25;
+    }
+
+    100% {
+        left: 7%;
+        opacity: 1;
+    }
+}
