@@ -45,7 +45,7 @@
         $registro = $_POST["registro"];
 
         $servername = "localhost";
-        $database = "senai";
+        $database = "teste_foreign";
         $username = "root";
         $password = "";
 

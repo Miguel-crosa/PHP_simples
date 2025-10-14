@@ -12,7 +12,7 @@
     <?php
 
     $servername = "localhost";
-    $database = "senai";
+    $database = "teste_foreign";
     $username = "root";
     $password = "";
 

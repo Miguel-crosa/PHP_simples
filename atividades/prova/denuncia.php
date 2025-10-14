@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$database = "senai";
+$database = "teste_foreign";
 $username = "root";
 $password = "";
 
@@ -108,24 +108,24 @@ if (!$conn) {
         $codigo = $_POST["codigo"];
         $cor = $_POST["cor"];
 
-        $sql = " INSERT INTO denuncia(
-            id_professor,
+        $sql = "INSERT INTO denuncia(
             denuncia_sala,
             denuncia_patrimonio,
             denuncia_descricao,
             denuncia_falta,
             denuncia_data,
             denuncia_codigopatrimonio,
-            denuncia_corpatrimonio
+            denuncia_corpatrimonio,
+            professor_id_professor
             ) VALUES (
-            '$id',
             '$sala',
             '$patrimonio',
             '$descricao',
             '$quantidade',
             '$data',
             '$codigo',
-            '$cor'
+            '$cor',
+            '$id'
             ); ";
 
         if (mysqli_query($conn, $sql)) {

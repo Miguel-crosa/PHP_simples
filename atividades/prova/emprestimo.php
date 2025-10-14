@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$database = "senai";
+$database = "teste_foreign";
 $username = "root";
 $password = "";
 
@@ -97,23 +97,23 @@ if (!$conn) {
         echo "Conectado com sucesso";
 
         $sql = " INSERT INTO emprestimo(
-            id_professor,
             emprestimo_sala,
             emprestimo_patrimonio,
             emprestimo_descricao,
             emprestimo_quantidade,
             emprestimo_data,
             emprestimo_codigopatrimonio,
-            emprestimo_corpatrimonio
+            emprestimo_corpatrimonio,
+            professor_id_professor
             ) VALUES (
-            '$id',
             '$sala',
             '$patrimonio',
             '$descricao',
             '$quantidade',
             '$data',
             '$codigo',
-            '$cor'
+            '$cor',
+            '$id'
             ); ";
 
         if (mysqli_query($conn, $sql)) {

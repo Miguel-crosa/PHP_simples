@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$database = "senai";
+$database = "teste_foreign";
 $username = "root";
 $password = "";
 
@@ -40,18 +40,8 @@ if (!$conn) {
             <input type="number" name="quantidade" required><br>
 
             <label for="PatrimonioCodigo">Codigo do Patrimonio:</label>
-            <select name="codigo" id="patrimonioCodigo">
-                <option value="">Escolha um codigo</option>
-
-                <?php
-                $sqlCliente = 'SELECT patrimonio_codigo from patrimonio';
-                $resulta = $conn->query($sqlCliente);
-                while ($row = $resulta->fetch_assoc()) {
-                    echo '<option value="' . $row["patrimonio_codigo"] . "|" . $row["patrimonio_codigo"] . '">' . $row["patrimonio_codigo"] . '</option>';
-                }
-                ?>
-
-            </select><br><br>
+            <input name="codigo" id="patrimonioCodigo">
+            <br><br>
 
             <label for="PatrimonioCor">Cor do Patrimonio:</label>
             <input type="text" name="cor" required><br>

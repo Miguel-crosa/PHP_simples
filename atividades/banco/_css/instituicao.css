@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to left, #dfcdb4, #fbeed3);
+}
+
+* {
+    outline: 0;
+}
+
+.formulario {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    translate: -50%-50%;
+    justify-content: center;
+    text-align: center;
+    background-color: #dfcdb4;
+    border: 5px solid #6b5d4d;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label:hover {
+    cursor: text;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+    border: 2px solid #6b5d4d;
+    transition: 0.2s;
+    text-align: center;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    cursor: text;
+    scale: 1.2;
+}
+
+input[type='submit'] {
+    height: 30px;
+    width: 150px;
+    position: relative;
+    top: 15%;
+}
+
+input[type='submit']:focus {
+    cursor: pointer;
+    text-align: center;
+}
+
+.envio {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    translate: -50%-50%;
+    font-size: 30px;
+}
+
+.texto {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

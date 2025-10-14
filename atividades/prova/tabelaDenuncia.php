@@ -12,7 +12,7 @@
     <?php
 
     $servername = "localhost";
-    $database = "senai";
+    $database = "teste_foreign";
     $username = "root";
     $password = "";
 
@@ -83,7 +83,7 @@
         echo "</td>";
 
         echo "<td>";
-        echo $linha['id_professor'] . "<br>";
+        echo $linha['professor_id_professor'] . "<br>";
         echo "</td>";
 
         echo "<td>";
