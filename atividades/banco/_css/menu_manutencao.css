@@ -32,3 +32,9 @@ div {
     translate: -50%-50%;
     flex-direction: row;
 }
+
+.voltar {
+    position: absolute;
+    top: 93%;
+    left: 93%;
+}

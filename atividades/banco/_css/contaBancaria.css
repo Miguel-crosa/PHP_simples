@@ -90,6 +90,16 @@ input[type='submit']:hover{
     cursor: pointer;
 }
 
+select{
+    position: relative;
+    top: 2%;
+    width: 120px;
+    height: 20px;
+    border: 2px solid #6b5d4d;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #voltar:hover{
     scale: 1.2;
 }

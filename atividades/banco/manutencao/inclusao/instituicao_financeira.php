@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../_css/instituicao.css">
-    <title>Insituição Financeira</title>
+    <title>Cadastro Insituição Financeira</title>
 </head>
 
 <body>
@@ -30,8 +30,7 @@
         </form>
     </div>
 
-    <div class="proximo"></div>
-    <div class="anterior"></div>
+    <button id="voltar" onclick="window.location.href='./menu.html'">VOLTAR</button>
 
     <?php
 

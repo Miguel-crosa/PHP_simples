@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #c6aeaa;
+}
+
+.texto {
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formulario {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 720px;
+    background-color: #9eaeaa;
+    border: 4px solid #b2aeaa;
+    border-radius: 20px;
+}
+
+label {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    justify-self: center;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+select {
+    display: flex;
+    justify-self: center;
+    width: 120px;
+    height: 25px;
+    border: 2px solid #daaeaa;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+select:hover {
+    scale: 1.2;
+}
+
+input {
+    display: flex;
+    justify-self: center;
+    border: 2px solid #daaeaa;
+    border-radius: 10px;
+    width: 240px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input:focus {
+    scale: 1.2;
+    cursor: text;
+    box-shadow: 2px 2px #eeaeaa98;
+    font-weight: bold;
+}
+
+input[type='submit'] {
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type='submit']:hover {
+    scale: 1.2;
+}
+
+#voltar {
+    width: 100px;
+    height: 35px;
+    position: absolute;
+    left: 95%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: 2px solid #daaeaa;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+#voltar:hover {
+    scale: 1.2;
+}
